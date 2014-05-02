@@ -1,6 +1,6 @@
 Example web application using the Java Web Framework project
 
-### Build / Run
+## Build / Run
 
 ```
 ./mvnw compile
@@ -16,7 +16,7 @@ Example web application using the Java Web Framework project
 http://localhost:8080
 ```
 
-### Using the framework
+## Using the framework
 
 The aim of this project is to make it easier and faster to develop web applications in Java. Traditionally web applications in Java require a lot of configuration and setup, and often a lot of boilerplate code is required before even a simple application can be run.
 
@@ -195,7 +195,7 @@ post("/person", new IRouteHandler() {
 ```
 
 
-### Actions
+###Actions
 
 Actions are the objects that are returned from Route Handlers. They contain text or binary data and their contents may eventually be displayed in a browser or consumed by an API (as two examples).
 
@@ -259,6 +259,7 @@ public class HelloController extends Controller {
                 return home;
             }
         });
+    }
 }
 ```
 
@@ -276,7 +277,6 @@ public class PersonView extends View {
     public PersonView(Person model) {
         this.model = model;
     }
-
 }
 ```
 
