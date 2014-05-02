@@ -3,11 +3,11 @@ Example web application using the Java Web Framework project
 ### Build / Run
 
 ```
-./mvn compile
+./mvnw compile
 ```
 
 ```
-./mvn jetty:start
+./mvnw jetty:start
 ```
 
 ### Viewing the Application
