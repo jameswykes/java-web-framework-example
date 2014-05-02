@@ -81,11 +81,11 @@ Inside a controller, it could be used like this:
 ```java
 public class PersonController extends Controller {
 	public void init() {
-		 get("/person/:personid", new IRouteHandler() {
+        get("/person/:personid", new IRouteHandler() {
             public Action handle(Request request, Response response) {
-            	return new Raw(“person id: “ + request.getRouteParam(“:personid”));
+                return new Raw(“person id: “ + request.getRouteParam(“:personid”));
             }
-         });
+        });
 	}
 }
 ```
@@ -124,11 +124,11 @@ POST routes can be defined by calling the post() method to add the route, rather
 ```java
 public class PersonController extends Controller {
 	public void init() {
-		 post("/person", new IRouteHandler() {
+        post("/person", new IRouteHandler() {
             public Action handle(Request request, Response response) {
-            	return new Raw(“This is a POST route”);
+                return new Raw(“This is a POST route”);
             }
-         });
+        });
 	}
 }
 ```
@@ -145,6 +145,7 @@ The Request object in the route handler contains some methods to easily access P
 <input type=”text” name=”email” />
 <input type=”submit” value=”Submit” />
 </form>
+</html>
 ```
 
 Accessing the POST data value “personName” can be accessed as follows:
@@ -172,10 +173,10 @@ You could populate this by calling request.getPostParam() for both name and emai
 
 ```java
 post("/person", new IRouteHandler() {
-            public Action handle(Request request, Response response) {
-            	RegistrationViewModel vm = getModel(request, RegistrationViewModel.class);
-		// ..
-            }
+    public Action handle(Request request, Response response) {
+        RegistrationViewModel vm = getModel(request, RegistrationViewModel.class);
+        // ..
+    }
 });
 ```
 
@@ -218,11 +219,11 @@ Consider the following example:
 ```java
 public class DefaultController extends Controller {
 	public void init() {
-		 get("/hello-world", new IRouteHandler() {
+        get("/hello-world", new IRouteHandler() {
             public Action handle(Request request, Response response) {
-            	return new Text(“Hello World!”);
+                return new Text(“Hello World!”);
             }
-         });
+        });
 	}
 }
 ```
