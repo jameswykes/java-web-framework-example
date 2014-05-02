@@ -7,8 +7,8 @@ public class HelloControllerTest extends TestCase {
     public void testHello() {
         try {
             TestClient client = new TestClient(HelloController.class);
-            TestClientResponse response = client.get("/");
-            assertEquals("test", response.getRaw());
+            TestClientResponse response = client.get("/test");
+            assertEquals("hello", response.getRaw());
         } catch (Exception ex) {
             ex.printStackTrace();
         }

@@ -9,8 +9,15 @@ public class HelloController extends Controller {
             @Override
             public Action handle(Request request, Response response) {
                 View home = new View("src/main/webapp/templates/home.html");
-                home.setValue("{name}", "james");
+                home.setValue("{name}", "world");
                 return home;
+            }
+        });
+
+        get("/test", new IRouteHandler() {
+            @Override
+            public Action handle(Request request, Response response) {
+                return new Text("hello");
             }
         });
     }
