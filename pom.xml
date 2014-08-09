@@ -17,10 +17,10 @@
         </dependency>
         <dependency>
             <groupId>me.jw</groupId>
-            <artifactId>mvc</artifactId>
-            <version>0.0.1</version>
+            <artifactId>java-web-framework</artifactId>
+            <version>0.0.2</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/mvc-0.0.1-all.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/java-web-framework-0.0.2-all.jar</systemPath>
         </dependency>
     </dependencies>
 

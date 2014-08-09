@@ -37,9 +37,9 @@ public class DefaultController extends Controller {
 	public void init() {
 		 get("/", new IRouteHandler() {
             public Action handle(Request request, Response response) {
-            	return new Raw(“Hello World!”);
+            	return new Text(“Hello World!”);
             }
-});
+        });
 	}
 }
 ```
